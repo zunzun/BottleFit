@@ -170,7 +170,7 @@ def simplefitter_3D_NoFormDataValidation():
     # create graphs
     graphFilePath_Surface = "static/surface.png" # surface plot
     graphFilePath_Contour = "static/contour.png" # contour plot
-    surfaceTitle = "ESurface Plot"
+    surfaceTitle = "Surface Plot"
     contourTitle = "Contour Plot"
     xAxisLabel = "X data"
     yAxisLabel = "Y data"
@@ -231,8 +231,8 @@ def equationlist_2D():
     
                         equation = equationClass[1]('SSQABS', extendedVersionName)
                         htmlToReturn += '<tr>'
-                        htmlToReturn += '<td nowrap>2D ' + submodule[0] + '</td>'
-                        htmlToReturn += '<td nowrap>' + equation.GetDisplayName() + '</td>'
+                        htmlToReturn += '<td nowrap><b>2D ' + submodule[0] + '</b></td>'
+                        htmlToReturn += '<td nowrap><i>' + equation.GetDisplayName() + '</i></td>'
                         htmlToReturn += '<td nowrap>' + equation.GetDisplayHTML() + '</td>'
                         htmlToReturn += '</tr>'
                         
@@ -257,8 +257,8 @@ def equationlist_3D():
     
                         equation = equationClass[1]('SSQABS', extendedVersionName)
                         htmlToReturn += '<tr>'
-                        htmlToReturn += '<td nowrap>3D ' + submodule[0] + '</td>'
-                        htmlToReturn += '<td nowrap>' + equation.GetDisplayName() + '</td>'
+                        htmlToReturn += '<td nowrap><b>3D ' + submodule[0] + '</b></td>'
+                        htmlToReturn += '<td nowrap><i>' + equation.GetDisplayName() + '</i></td>'
                         htmlToReturn += '<td nowrap>' + equation.GetDisplayHTML() + '</td>'
                         htmlToReturn += '</tr>'
                         
